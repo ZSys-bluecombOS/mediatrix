@@ -3,4 +3,4 @@ Combined programming language and multimedia editors of several types.
 
 This is entirely Adobe's fault IIRC
 
-I will make this in multiple programming languages I'm sure but I will finish the Python one first at least
+I intend to make this in multiple programming languages but I will finish the ZAP one first
