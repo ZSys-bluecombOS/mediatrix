@@ -1,14 +1,8 @@
-commands = {}
-commands["add"] = lambda x, y: x + y
-commands["subtract"] = lambda x, y: x - y
-commands["multiply"] = lambda x, y: x * y
-commands["divide"] = lambda x, y: x / y
-commands["print"] = lambda x: print(x)
-
 class Interpreter:
   def __init__(self, code):
     self.process(code)
     self.run()
+    self.commands = {}
 
   def process(self, code):
     i = 1
@@ -23,5 +17,5 @@ class Interpreter:
       elif code[i] == ")" or code[i] == " ":
         current_place = before_current_place
 
-  def run(self):
+  def run(self, vars=None):
     pass
