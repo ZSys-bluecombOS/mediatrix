@@ -1,0 +1,13 @@
+ALIAS "FUNCTION a b c ..." "FUNCTION a(b, c, ...)"
+
+CLASS MtxColor {
+  FUNCTION self.__init__(MtxColor self, str color_mode, List<float> values, int alpha) {
+    SET self.color_mode color_mode
+    SET self.alpha alpha
+    IF (AND CMP_EQ color_mode "RGB" NOT CMP_EQ values.length 3) {
+      CALL std.error "Wrong number of values for " + color_mode
+    }
+  }
+}
+
+/* This may change, ZAP is still not finalized */
