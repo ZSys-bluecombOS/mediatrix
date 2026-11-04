@@ -1,7 +1,8 @@
-class MtxVector:
+class VImage:
   class Path:
-    def __init__(self):
-      self.points = []
+    def __init__(self, points, color):
+      self.points = points
+      self.color = color
 
   def __init__(self, size):
     self.width = size[0]
